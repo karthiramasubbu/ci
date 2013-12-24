@@ -11,5 +11,6 @@ public class App
         System.out.println( "Welcome Continuous Integration World" );
         System.out.println("There is some change in the code -- now the jenkins job should build");
         System.out.println("Another change");
+        System.out.println("To test user credentials in Jenkins");
     }
 }
