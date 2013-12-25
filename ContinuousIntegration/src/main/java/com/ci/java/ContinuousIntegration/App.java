@@ -1,16 +1,27 @@
 package com.ci.java.ContinuousIntegration;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Hello world!
  *
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws ParseException
     {
-        System.out.println( "Welcome Continuous Integration World" );
-        System.out.println("There is some change in the code -- now the jenkins job should build");
-        System.out.println("Another change");
-        System.out.println("To test user credentials in Jenkins");
+    	String dateStr = "2014-01-26T05:59:59.000Z";
+    	dateStr = dateStr.substring(0, 10);
+    	DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+    	Date date = formatter.parse(dateStr);
+    	System.out.println(date);
+    	
+        
+        
+        
+        
     }
 }
