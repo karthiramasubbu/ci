@@ -18,6 +18,7 @@ public class App
     	DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
     	Date date = formatter.parse(dateStr);
     	System.out.println(date);
+    	System.out.println("jenkins test");
     	
         
         
